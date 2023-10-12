@@ -69,7 +69,7 @@
 				89A294CB2AD8335700E95477 /* Info.plist */,
 				89A294B32AD8309A00E95477 /* YomuApp.swift */,
 				89A294CA2AD832A100E95477 /* Sounds */,
-				89A294C12AD8320B00E95477 /* Screens */,
+				89A294C12AD8320B00E95477 /* Model */,
 				89FAB3582AD875610072AB1E /* View */,
 				89BA2A902AD8AD6500865F5B /* Utilities */,
 				89A294B72AD8309C00E95477 /* Assets.xcassets */,
@@ -87,14 +87,14 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		89A294C12AD8320B00E95477 /* Screens */ = {
+		89A294C12AD8320B00E95477 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				89A294B52AD8309A00E95477 /* ContentView.swift */,
 				89A294C22AD8323F00E95477 /* HomeView.swift */,
 				89A294C42AD8326B00E95477 /* OnboardingView.swift */,
 			);
-			path = Screens;
+			path = Model;
 			sourceTree = "<group>";
 		};
 		89A294CA2AD832A100E95477 /* Sounds */ = {
