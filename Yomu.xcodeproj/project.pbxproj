@@ -16,6 +16,7 @@
 		89A294C82AD8328F00E95477 /* chimeup.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 89A294C62AD8328F00E95477 /* chimeup.mp3 */; };
 		89A294C92AD8328F00E95477 /* success.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 89A294C72AD8328F00E95477 /* success.m4a */; };
 		89A294CD2AD85C1F00E95477 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 89A294CC2AD85C1F00E95477 /* README.md */; };
+		89BA2A8F2AD8AD6000865F5B /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89BA2A8E2AD8AD6000865F5B /* AudioPlayer.swift */; };
 		89FAB3572AD8755A0072AB1E /* CircleGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89FAB3562AD875590072AB1E /* CircleGroupView.swift */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +32,7 @@
 		89A294C72AD8328F00E95477 /* success.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = success.m4a; sourceTree = "<group>"; };
 		89A294CB2AD8335700E95477 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		89A294CC2AD85C1F00E95477 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		89BA2A8E2AD8AD6000865F5B /* AudioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayer.swift; sourceTree = "<group>"; };
 		89FAB3562AD875590072AB1E /* CircleGroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleGroupView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -68,10 +70,11 @@
 				89A294B32AD8309A00E95477 /* YomuApp.swift */,
 				89A294CA2AD832A100E95477 /* Sounds */,
 				89A294C12AD8320B00E95477 /* Screens */,
+				89FAB3582AD875610072AB1E /* View */,
+				89BA2A902AD8AD6500865F5B /* Utilities */,
 				89A294B72AD8309C00E95477 /* Assets.xcassets */,
 				89A294B92AD8309C00E95477 /* Preview Content */,
 				89A294CC2AD85C1F00E95477 /* README.md */,
-				89FAB3582AD875610072AB1E /* View */,
 			);
 			path = Yomu;
 			sourceTree = "<group>";
@@ -101,6 +104,14 @@
 				89A294C72AD8328F00E95477 /* success.m4a */,
 			);
 			path = Sounds;
+			sourceTree = "<group>";
+		};
+		89BA2A902AD8AD6500865F5B /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				89BA2A8E2AD8AD6000865F5B /* AudioPlayer.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 		89FAB3582AD875610072AB1E /* View */ = {
@@ -189,6 +200,7 @@
 				89A294C52AD8326B00E95477 /* OnboardingView.swift in Sources */,
 				89A294B62AD8309A00E95477 /* ContentView.swift in Sources */,
 				89A294B42AD8309A00E95477 /* YomuApp.swift in Sources */,
+				89BA2A8F2AD8AD6000865F5B /* AudioPlayer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

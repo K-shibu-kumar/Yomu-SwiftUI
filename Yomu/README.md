@@ -9,6 +9,11 @@
 5. Rotation effect
 6. UX enhancement
 7. Text translation (Using "identifiable view")
+8. Dark mode Optimisation
+   (Main Screen -> notification bar -> dark mode -> always on)
+   (Second Screen -> asthetic changes with different modes)
+9. AVFoundation
+10. Haptic feedback
 
 
 [end](#end)
