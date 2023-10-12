@@ -11,6 +11,12 @@
 		89A294B62AD8309A00E95477 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A294B52AD8309A00E95477 /* ContentView.swift */; };
 		89A294B82AD8309C00E95477 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89A294B72AD8309C00E95477 /* Assets.xcassets */; };
 		89A294BB2AD8309C00E95477 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89A294BA2AD8309C00E95477 /* Preview Assets.xcassets */; };
+		89A294C32AD8323F00E95477 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A294C22AD8323F00E95477 /* HomeView.swift */; };
+		89A294C52AD8326B00E95477 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A294C42AD8326B00E95477 /* OnboardingView.swift */; };
+		89A294C82AD8328F00E95477 /* chimeup.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 89A294C62AD8328F00E95477 /* chimeup.mp3 */; };
+		89A294C92AD8328F00E95477 /* success.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 89A294C72AD8328F00E95477 /* success.m4a */; };
+		89A294CD2AD85C1F00E95477 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 89A294CC2AD85C1F00E95477 /* README.md */; };
+		89FAB3572AD8755A0072AB1E /* CircleGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89FAB3562AD875590072AB1E /* CircleGroupView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +25,13 @@
 		89A294B52AD8309A00E95477 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		89A294B72AD8309C00E95477 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		89A294BA2AD8309C00E95477 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		89A294C22AD8323F00E95477 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		89A294C42AD8326B00E95477 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		89A294C62AD8328F00E95477 /* chimeup.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = chimeup.mp3; sourceTree = "<group>"; };
+		89A294C72AD8328F00E95477 /* success.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = success.m4a; sourceTree = "<group>"; };
+		89A294CB2AD8335700E95477 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		89A294CC2AD85C1F00E95477 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		89FAB3562AD875590072AB1E /* CircleGroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleGroupView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,10 +64,14 @@
 		89A294B22AD8309A00E95477 /* Yomu */ = {
 			isa = PBXGroup;
 			children = (
+				89A294CB2AD8335700E95477 /* Info.plist */,
 				89A294B32AD8309A00E95477 /* YomuApp.swift */,
-				89A294B52AD8309A00E95477 /* ContentView.swift */,
+				89A294CA2AD832A100E95477 /* Sounds */,
+				89A294C12AD8320B00E95477 /* Screens */,
 				89A294B72AD8309C00E95477 /* Assets.xcassets */,
 				89A294B92AD8309C00E95477 /* Preview Content */,
+				89A294CC2AD85C1F00E95477 /* README.md */,
+				89FAB3582AD875610072AB1E /* View */,
 			);
 			path = Yomu;
 			sourceTree = "<group>";
@@ -65,6 +82,33 @@
 				89A294BA2AD8309C00E95477 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		89A294C12AD8320B00E95477 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				89A294B52AD8309A00E95477 /* ContentView.swift */,
+				89A294C22AD8323F00E95477 /* HomeView.swift */,
+				89A294C42AD8326B00E95477 /* OnboardingView.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		89A294CA2AD832A100E95477 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				89A294C62AD8328F00E95477 /* chimeup.mp3 */,
+				89A294C72AD8328F00E95477 /* success.m4a */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+		89FAB3582AD875610072AB1E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				89FAB3562AD875590072AB1E /* CircleGroupView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +169,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89A294C92AD8328F00E95477 /* success.m4a in Resources */,
+				89A294C82AD8328F00E95477 /* chimeup.mp3 in Resources */,
+				89A294CD2AD85C1F00E95477 /* README.md in Resources */,
 				89A294BB2AD8309C00E95477 /* Preview Assets.xcassets in Resources */,
 				89A294B82AD8309C00E95477 /* Assets.xcassets in Resources */,
 			);
@@ -137,6 +184,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89FAB3572AD8755A0072AB1E /* CircleGroupView.swift in Sources */,
+				89A294C32AD8323F00E95477 /* HomeView.swift in Sources */,
+				89A294C52AD8326B00E95477 /* OnboardingView.swift in Sources */,
 				89A294B62AD8309A00E95477 /* ContentView.swift in Sources */,
 				89A294B42AD8309A00E95477 /* YomuApp.swift in Sources */,
 			);
@@ -197,7 +247,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -254,7 +304,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -275,11 +325,12 @@
 				DEVELOPMENT_TEAM = 39D67N2Q24;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Yomu/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIRequiresFullScreen = NO;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,11 +355,12 @@
 				DEVELOPMENT_TEAM = 39D67N2Q24;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Yomu/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIRequiresFullScreen = NO;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
