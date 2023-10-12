@@ -14,10 +14,10 @@ struct OnboardingView: View {
     @State private var buttonWidth: Double = UIScreen.main.bounds.width - 80
     @State private var buttonOffset: CGFloat = 0
     @State private var isAnimating: Bool = false
-    
-    
-    
-    
+    @State private var imageOffset: CGSize = .zero
+    @State private var indicatorOpacity: Double = 1.0
+    @State private var textTitle: String = "Yomu."
+
     //MARK: - Body
     
     var body: some View {
@@ -29,10 +29,12 @@ struct OnboardingView: View {
                 Spacer()
                 
                 VStack(spacing: 0) {
-                    Text("Read.")
+                    Text(textTitle)
                         .font(.system(size: 60))
                         .fontWeight(.heavy)
                         .foregroundColor(Color.white)
+                        .transition(.opacity)
+                        .id(textTitle)
                     
                     Text("""
                         Share your thoughts with the world.
@@ -50,15 +52,49 @@ struct OnboardingView: View {
                 //MARK: - Center
                 ZStack{
                     CircleGroupView(ShapeColor: .white, ShapeOpacity: 0.2)
+                        .offset(x: imageOffset.width * -1)
+                        .blur(radius: abs(imageOffset.width / 5))
+                        .animation(.easeOut(duration: 1), value: imageOffset)
                     
                     Image("character-1")
                         .resizable()
                         .scaledToFit()
                         .opacity(isAnimating ? 1 : 0)
                         .animation(.easeOut(duration: 0.85), value: isAnimating)
-                    
+                        .offset(x: imageOffset.width * 1.2, y:0)
+                        .rotationEffect(Angle(degrees: Double(imageOffset.width / 20)))
+                        .gesture(
+                            DragGesture()
+                                .onChanged { gesture in
+                                    if abs(imageOffset.width) <= 150 {
+                                        imageOffset = gesture.translation
+                                        
+                                        withAnimation(.linear(duration: 0.25)) {
+                                            indicatorOpacity = 0
+                                            textTitle = "Yomu."
+                                        }
+                                    }
+                                }
+                                .onEnded { _ in
+                                    imageOffset = .zero
+                                    withAnimation(.linear(duration: 0.25)) {
+                                        indicatorOpacity = 1
+                                        textTitle = "Read."
+                                    }
+                                }
+                        )//: Gesture
+                        .animation(.easeOut(duration: 1), value: imageOffset)
                 }//: Center
-                
+                .overlay(
+                   Image(systemName: "arrow.left.and.right.circle")
+                    .font(.system(size: 44, weight: .ultraLight))
+                    .foregroundColor(.white)
+                    .opacity(isAnimating ? 1 : 0)
+                    .animation(.easeOut(duration: 1).delay(2), value: isAnimating)
+                    .opacity(indicatorOpacity)
+                    .offset(y: 20)
+                    , alignment: .bottom
+                )
                 Spacer()
                 
                 //MARK: - Footer
