@@ -15,12 +15,12 @@
 		89A294C52AD8326B00E95477 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A294C42AD8326B00E95477 /* OnboardingView.swift */; };
 		89A294C82AD8328F00E95477 /* chimeup.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 89A294C62AD8328F00E95477 /* chimeup.mp3 */; };
 		89A294C92AD8328F00E95477 /* success.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 89A294C72AD8328F00E95477 /* success.m4a */; };
-		89A294CD2AD85C1F00E95477 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 89A294CC2AD85C1F00E95477 /* README.md */; };
 		89BA2A8F2AD8AD6000865F5B /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89BA2A8E2AD8AD6000865F5B /* AudioPlayer.swift */; };
 		89FAB3572AD8755A0072AB1E /* CircleGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89FAB3562AD875590072AB1E /* CircleGroupView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		890D6DCD2AD8BDA200E95E81 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		89A294B02AD8309A00E95477 /* Yomu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Yomu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		89A294B32AD8309A00E95477 /* YomuApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YomuApp.swift; sourceTree = "<group>"; };
 		89A294B52AD8309A00E95477 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -31,7 +31,6 @@
 		89A294C62AD8328F00E95477 /* chimeup.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = chimeup.mp3; sourceTree = "<group>"; };
 		89A294C72AD8328F00E95477 /* success.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = success.m4a; sourceTree = "<group>"; };
 		89A294CB2AD8335700E95477 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		89A294CC2AD85C1F00E95477 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		89BA2A8E2AD8AD6000865F5B /* AudioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayer.swift; sourceTree = "<group>"; };
 		89FAB3562AD875590072AB1E /* CircleGroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleGroupView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -50,6 +49,7 @@
 		89A294A72AD8309A00E95477 = {
 			isa = PBXGroup;
 			children = (
+				890D6DCD2AD8BDA200E95E81 /* README.md */,
 				89A294B22AD8309A00E95477 /* Yomu */,
 				89A294B12AD8309A00E95477 /* Products */,
 			);
@@ -74,7 +74,6 @@
 				89BA2A902AD8AD6500865F5B /* Utilities */,
 				89A294B72AD8309C00E95477 /* Assets.xcassets */,
 				89A294B92AD8309C00E95477 /* Preview Content */,
-				89A294CC2AD85C1F00E95477 /* README.md */,
 			);
 			path = Yomu;
 			sourceTree = "<group>";
@@ -182,7 +181,6 @@
 			files = (
 				89A294C92AD8328F00E95477 /* success.m4a in Resources */,
 				89A294C82AD8328F00E95477 /* chimeup.mp3 in Resources */,
-				89A294CD2AD85C1F00E95477 /* README.md in Resources */,
 				89A294BB2AD8309C00E95477 /* Preview Assets.xcassets in Resources */,
 				89A294B82AD8309C00E95477 /* Assets.xcassets in Resources */,
 			);
