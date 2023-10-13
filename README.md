@@ -35,4 +35,5 @@ Yomu iOS app combines cutting-edge design and functionality to deliver a premium
 Yomu means "read" in Japanese
 
 ## Screenshots
-![Yomu](Yomu/Documents/Simulator Screenshot - iPhone 13 - 2023-10-13 at 05.42.12.png)
+![image](Documents/screen_1.png)
+![image](Documents/screen_2.png)
