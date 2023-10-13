@@ -36,4 +36,4 @@ Yomu means "read" in Japanese
 
 ## Screenshots
 ![image](Documents/screen_1.png)
-![image](Documents/screen_2.png)
+![image](Documents/screen_2.png.png)
