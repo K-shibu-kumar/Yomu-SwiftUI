@@ -20,7 +20,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		890D6DCD2AD8BDA200E95E81 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		89A294B02AD8309A00E95477 /* Yomu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Yomu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		89A294B32AD8309A00E95477 /* YomuApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YomuApp.swift; sourceTree = "<group>"; };
 		89A294B52AD8309A00E95477 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -49,7 +48,6 @@
 		89A294A72AD8309A00E95477 = {
 			isa = PBXGroup;
 			children = (
-				890D6DCD2AD8BDA200E95E81 /* README.md */,
 				89A294B22AD8309A00E95477 /* Yomu */,
 				89A294B12AD8309A00E95477 /* Products */,
 			);
