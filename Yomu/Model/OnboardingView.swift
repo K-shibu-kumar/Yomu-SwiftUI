@@ -29,7 +29,7 @@ struct OnboardingView: View {
             Color("ColorGreen")
                 .edgesIgnoringSafeArea(.all)
             VStack(spacing: 20) {
-                //MARK: - Header
+    //MARK: - Header
                 Spacer()
                 
                 VStack(spacing: 0) {
@@ -187,6 +187,8 @@ struct OnboardingView: View {
     }
 }
 
-#Preview {
-    OnboardingView()
+struct OnboardingView_Previews: PreviewProvider {
+    static var previews: some View {
+        OnboardingView()
+    }
 }

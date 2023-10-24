@@ -35,11 +35,10 @@ struct CircleGroupView: View {
     }
 }
 
-#Preview {
-    ZStack {
-        Color("ColorGreen")
-            .edgesIgnoringSafeArea(.all)
-        
-        CircleGroupView(ShapeColor: .white, ShapeOpacity: 0.2)
+
+struct CircleGroupView_Previews: PreviewProvider {
+    static var previews: some View {
+        CircleGroupView(ShapeColor: Color(UIColor(.brown)), ShapeOpacity: 0.4)
     }
 }
+

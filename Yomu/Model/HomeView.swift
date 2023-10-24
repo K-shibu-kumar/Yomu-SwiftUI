@@ -21,7 +21,7 @@ struct HomeView: View {
                 //MARK: - Header
                 Spacer()
                 ZStack {
-                    CircleGroupView(ShapeColor: .colorGrey, ShapeOpacity: 0.2)
+                    CircleGroupView(ShapeColor: Color("ColorGrey"), ShapeOpacity: 0.2)
                     
                     Image("character-2")
                         .resizable()
@@ -37,7 +37,7 @@ struct HomeView: View {
                 Text("Don't write anything you can phone. Don't phone anything you can talk. Don't talk anything you can whisper. Don't whisper anything you can smile. Don't smile anything you can nod. Don't nod anything you can wink.😉")
                     .font(.title2)
                     .fontWeight(.medium)
-                    .foregroundColor(Color.colorGrey)
+                    .foregroundColor(Color("ColorGrey"))
                     .multilineTextAlignment(.center)
                     .padding()
                 
@@ -62,7 +62,7 @@ struct HomeView: View {
                 .buttonStyle(.borderedProminent)
                 .buttonBorderShape(.capsule)
                 .controlSize(.large)
-                .tint(Color.colorDarkGreen)
+                .tint(Color("ColorDarkGreen"))
             }
         }//: VStack
         .onAppear(perform: {
@@ -73,6 +73,9 @@ struct HomeView: View {
     }
 }
 
-#Preview {
-    HomeView()
+
+struct HomeView_Previews: PreviewProvider {
+    static var previews: some View {
+        HomeView()
+    }
 }
